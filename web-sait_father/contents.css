@@ -290,7 +290,14 @@ nav{
   background:#006BD0;
 }
 
+.services:hover{
+    box-shadow: inset 0 -10px 200px black;
+  }
 .services{
+  transition: .3s;
+  -webkit-box-shadow: inset 0 -10px 15px black;
+  box-shadow: inset 0 -10px 150px black;
+  background:white;
   position:relative;
 
   border-left: 12px solid black;
@@ -312,19 +319,12 @@ nav{
 }
 
 .services_div{
-  transform-style:preserve-3d;
-  perspective: 1000px;
-  box-sizing:border-box;
-  padding: 40px;
-  -webkit-box-shadow: inset 0 -10px 15px black;
-  box-shadow: inset 0 -10px 150px black;
-  background:white;
-  width:100%;
-  transition: .6s;
-}
-
-.services_div:hover{
-    box-shadow: inset 0 -10px 200px black;
+  position:relative;
+  width:95%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+  transition: .3s;
 }
 
 .service{
@@ -395,9 +395,10 @@ nav{
   padding-top: 30px;
   font-size: 23px;
   position:absolute;
-  width: 93%;
+  width: 100%;
   height: 600px;
   background:white;
+  color:blue !important;
 }
 
 #id4583290483290>div{

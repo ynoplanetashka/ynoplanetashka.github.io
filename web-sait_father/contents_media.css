@@ -28,6 +28,8 @@
   }
   .services_div{
     padding: 0 !important;
+    margin: 0 !important;
+    width: 100%; !important;
   }
   .service .core{
     font-size: 15px;
@@ -191,4 +193,10 @@
     width: 100%;
   }
 
+}
+
+@media (max-width: 660px) {
+  .cl432890432809::after{
+    display:none !important;
+  }
 }
