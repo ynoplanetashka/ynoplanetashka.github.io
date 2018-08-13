@@ -58,18 +58,52 @@ for (var ji = 0; ji < document.getElementsByClassName('clicable_image').length; 
 
 });
 
-window.addEventListener('resize',function(){panel_pos = 50;
-  if (document.documentElement.clientWidth >= 1100)document.getElementById('back_panel').style.display="block";
-  else document.getElementById('back_panel').style.display="none";})
+window.addEventListener('resize',function(){panel_pos = 50;if (document.documentElement.clientWidth <= 1100)
+{
+  document.getElementById('x').style.display="none";
+  document.getElementsByClassName('wrapper')[0].insertBefore(
+     document.getElementById('back_panel'),document.getElementsByClassName('special')[0]
+  );
+  document.getElementById('back_panel').style.display="block";
+  document.getElementById('back_panel').style.position="static";
+  document.getElementById('back_panel').style.width="100%";
+}else{
+  document.getElementById('x').style.display="block";
+  document.getElementById('back_panel').style.display="block";
+  document.getElementById('back_panel').style.right="100px";
+  document.getElementById('back_panel').style.position="fixed";
+  document.body.appendChild(document.getElementById('back_panel')
+  );
+  document.getElementById('back_panel').style.width="450px";
+}
 
-
-window.onload = function(){if (document.documentElement.clientWidth >= 1100)document.getElementById('back_panel').style.display="block";};
+});
+window.onload = function(){if (document.documentElement.clientWidth <= 1100)
+{
+  document.getElementById('x').style.display="none";
+  document.getElementsByClassName('wrapper')[0].insertBefore(
+     document.getElementById('back_panel'),document.getElementsByClassName('special')[0]
+  );
+  document.getElementById('back_panel').style.display="block";
+  document.getElementById('back_panel').style.position="static";
+  document.getElementById('back_panel').style.width="100%";
+}
+else{
+  document.getElementById('x').style.display="block";
+  document.getElementById('back_panel').style.display="block";
+  document.getElementById('back_panel').style.right="100px";
+  document.getElementById('back_panel').style.position="fixed";
+  document.body.appendChild(document.getElementById('back_panel')
+  );
+  document.getElementById('back_panel').style.width="450px";
+}
+};
 //setInterval(function(){var tklre = 500; getBoundingClientRect() = ++tklre;},200);
 
 document.getElementById('5432890432890423890').addEventListener('click',function(){
   parentnode4213 = this.parentNode.parentNode.removeChild(this.parentNode);
   document.getElementsByClassName('exam_form_exam')[0].style.display="block";
-  document.getElementById('382190809321').value = "";
+  document.getElementById('i382190809321').value = "";
   document.getElementById('483290489024809').value = "";
   document.getElementById('4893248902321809').value = "";
   document.getElementById('textarea483290483290').value = "";
@@ -110,6 +144,9 @@ document.getElementById('id4583290483290').appendChild(par43890321);
 
 
 
+// window.onload = function(){
+//
+// };
 
 
 
@@ -157,7 +194,7 @@ document.getElementById('id4583290483290').appendChild(par43890321);
 
 
 
-//прокрутка к верху страницы от футера
+// прокрутка к верху страницы от футера
 
 document.getElementsByTagName('footer')[0].addEventListener('click',function(){
   window.scrollTo(0,0);
