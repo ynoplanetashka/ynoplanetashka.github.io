@@ -58,7 +58,7 @@ for (var ji = 0; ji < document.getElementsByClassName('clicable_image').length; 
 
 });
 
-window.addEventListener('resize',function(){panel_pos = 50);
+window.addEventListener('resize',function(){panel_pos = 50;
   if (document.documentElement.clientWidth >= 1100)document.getElementById('back_panel').style.display="block";
   else document.getElementById('back_panel').style.display="none";})
 
