@@ -13,7 +13,7 @@ body{
   padding-top:45px;
   box-sizing:border-box;
   max-width: 1280px;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 a{
@@ -50,13 +50,14 @@ header .text{
   transition: .3s;
   position:relative;
   height: 250px;
+  width: 350px;
 }
 
 .logo-src{
   position:relative;
   left:70px;
   top:40px;
-  width: 50%;
+  width: 350px;
 }
 
 .clearfix::after{
@@ -416,10 +417,9 @@ nav{
 .sertificat{
   transition: .2s;
   padding-bottom: 150px;
-  flex-basis: 400px;
-  flex-grow:1;
+
   margin: 0 auto;
-  height: 400px;
+  width: 90%;
 }
 
 .our_diploms{
@@ -430,7 +430,8 @@ nav{
 
 .image_sertificat{
   transition: .3s;
-  height: 90%;
+  width: auto;
+  height: 600px;
   margin: 15px auto;
   display:block;
 }
@@ -447,9 +448,7 @@ nav{
 }
 
 .ser4832904890{
-  flex-wrap: wrap;
   width: 100%;
-  display:flex;
 }
 
 #i489320480932{
