@@ -1,9 +1,10 @@
-document.getElementById('back_panel').style.left = localStorage.getItem('panel_pos') + 'px';
+document.getElementById('back_panel').style.left = panel_pos + 'px';
 var top = document.getElementById('top');
 var removed = false;
 var clicked;
 var where_mouse;
 var exam = true;
+var panel_pos = 100;
 top.addEventListener('mousedown',function(e){if (e.target.id == "top") {where_mouse = e.clientX - document.getElementById('top').getBoundingClientRect().left;clicked = true;}});
 top.addEventListener('mouseup',function(){clicked = false;});
 top.addEventListener('mousemove',function(e){if (clicked && document.readyState === "complete")
@@ -16,7 +17,7 @@ else if (e.clientX - where_mouse <= 20){
 }
   else {document.getElementById('back_panel').style.left = e.clientX - where_mouse + 'px';}
 
-localStorage.setItem('panel_pos',document.getElementById('top').getBoundingClientRect().left);
+panel_pos = document.getElementById('top').getBoundingClientRect().left;
 }});
 document.getElementById('x').addEventListener('click',function(){if (exam){
 document.getElementById('back_panel').style.bottom = "-" + getComputedStyle(document.getElementById('core'),'').height;exam = !exam;} else {
@@ -57,7 +58,7 @@ for (var ji = 0; ji < document.getElementsByClassName('clicable_image').length; 
 
 });
 
-window.addEventListener('resize',function(){localStorage.setItem('panel_pos',150);
+window.addEventListener('resize',function(){panel_pos = 50);
   if (document.documentElement.clientWidth >= 1100)document.getElementById('back_panel').style.display="block";
   else document.getElementById('back_panel').style.display="none";})
 
@@ -80,8 +81,8 @@ document.getElementById('button5743894').addEventListener('click',function(){
   setTimeout(function(){document.getElementById('core').appendChild(parentnode4213)},600);
 });
 
-document.getElementById('p480239482903849023').addEventListener('click',function(){document.location.href = "file:///C:/Users/1/Desktop/web-sait_father/example.html";});
-document.getElementById('p48023948290384902323').addEventListener('click',function(){document.location.href = "file:///C:/Users/1/Desktop/web-sait_father/example.html";});
+document.getElementById('p480239482903849023').addEventListener('click',function(){document.location.href = "https://ynoplanetashka.github.io/web-sait_father/example.html";});
+document.getElementById('p48023948290384902323').addEventListener('click',function(){document.location.href = "https://ynoplanetashka.github.io/web-sait_father/example.html";});
 
 // услуги
 
@@ -110,8 +111,7 @@ document.getElementById('id4583290483290').appendChild(par43890321);
 
 
 
-window.onload = function(){console.log(examfun321().name);};
-function examfun321(){return {'name':"stas",'face':"pocan"};};
+
 
 //document.getElementById('button5743894')
 // window.onload = function(){
