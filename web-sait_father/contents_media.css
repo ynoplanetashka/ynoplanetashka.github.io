@@ -1,0 +1,117 @@
+@media (max-width:1290px) {
+  .wrapper{
+    padding-bottom:0;
+    padding-top:0;
+  }
+  body{
+    background:white;
+  }
+}
+
+@media(max-width:1200px){
+  .first_ser-info{
+    font-size: 1px;
+  }
+  .ser-info{
+    font-size: 12px;
+  }
+  .service .core{
+    font-size: 19px;
+    padding-top: 9px;
+  }
+}
+
+@media(max-width: 775px){
+  .image_sertificat{
+    width: 50%;
+    height: auto;
+  }
+  .services_div{
+    padding: 0 !important;
+  }
+  .service .core{
+    font-size: 15px;
+    padding-top: 21px;
+  }
+}
+
+@media(max-width: 530px){
+  .services_text{
+    font-size: 30px;
+  }
+  .service .ser-info{
+    padding-top: 10px;
+  }
+  .service .core{
+    height: 40px;
+    font-size: 10px;
+    padding-top: 10px;
+  }
+}
+
+@media(max-width: 370px){
+  .service .core{
+    padding-top: 5px;
+    height: 30px;
+  }
+}
+
+@media (max-width:1075px) {
+  /*header .text{
+    left: 75px;
+    position:relative;
+    width: auto;
+  }*/
+  .logo-src{
+    /*margin-left: -5%;*/
+    margin: 0 auto;
+    padding-bottom: 40px;
+  }
+
+}
+
+@media (max-width:850px){
+  .special .information .information-text{
+      padding: 5px 0 0 20px;
+      font-size: 20px;
+  }
+}
+
+@media (min-width: 1075px){
+  .logo-src{
+    padding-bottom: 130px;
+  }
+}
+
+@media (max-width: 390px){
+  .h4_header{
+    font-size: 10px;
+    margin-left: -50px;
+  }
+  #h4_mail::before{
+    margin-left: -30px;
+    background-size: 20px;
+  }
+  #h4_phone::before{
+    margin-left: -30px;
+    background-size: 20px;
+  }
+  #h4_place::before{
+    margin-left: -30px;
+    background-size: 20px;
+  }
+
+  .sertificat_text{
+    font-size: 20px;
+  }
+  .image_sertificat{
+    height: 80%;
+  }
+  .sertificat{
+    padding:0;
+  }
+  .logo-src{
+    left: -25px;
+    transform: scale(0.6) translateY(-7px);
+  }
+}
