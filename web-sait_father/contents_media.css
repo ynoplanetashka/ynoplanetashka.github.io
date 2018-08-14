@@ -89,6 +89,9 @@
 }
 
 @media (max-width: 1075px) {
+  .text43209483290::before{
+    display:none !important;
+  }
   .image_sertificat{
     width: 80%;
     height: auto;

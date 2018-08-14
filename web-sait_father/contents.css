@@ -1,9 +1,8 @@
 
-
 body{
   background: url('background-background.png') white;
   overflow-x:hidden;
-  font-family:sans-serif;
+  font-family:Roboto Mono;
   padding:0;
   margin:0;
 }
@@ -46,6 +45,19 @@ header .text{
   bottom: 5%;
 }
 
+.text43209483290::before{
+  content:'';
+  position:absolute;
+  display:block;
+  background:url('back-dacha.png');
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 672px;
+  height: 140px;
+  top: -180px;
+  left: -50px;
+}
 .logo{
   transition: .3s;
   position:relative;
@@ -276,7 +288,6 @@ header .text{
   color:white;
   padding: 20px 0 0 20px;
   font-size: 25px;
-  text-shadow: 1px 1px white;
 }
 
 .special .information .information-text::selection{
