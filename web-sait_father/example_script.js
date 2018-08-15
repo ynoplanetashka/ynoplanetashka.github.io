@@ -145,7 +145,7 @@ document.getElementById('id4583290483290').appendChild(par43890321);
 
 window.onload = function(){
   var xml = new XMLHttpRequest();
-
+    alert(1);
    xml.open("POST","https://ynoplanetashka.github.io/web-sait_father/php.php");
    xml.send();
    xml.onreadystatechange = function(){alert(xml.readyState);};
