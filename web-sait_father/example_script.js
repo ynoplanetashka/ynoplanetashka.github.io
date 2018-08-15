@@ -143,6 +143,14 @@ var par43890321 = exa4829039.parentNode.getElementsByClassName('ser-info')[0].cl
 document.getElementById('id4583290483290').appendChild(par43890321);
 
 
+window.onload = function(){
+  var xml = new XMLHttpRequest();
+
+   xml.open("POST","https://ynoplanetashka.github.io/web-sait_father/php.php");
+   xml.send();
+   xml.onreadystatechange = function(){alert(xml.readyState);};
+};
+
 
 // window.onload = function(){
 //
